@@ -18,14 +18,16 @@
                 <tr>
                     <td><input type="button" value="C" onclick="DeleteMe()"></td>
                     <td><input type="button" value="DE" onclick="document.getElementById('MyResult').value = document.getElementById('MyResult').value.toString().slice(0, -1) "></td>
-                    <td><input type="button" value="*" onclick="calculator('*')"></td>
+                    <td><input type="button" value="(" onclick="calculator('(')"></td>
+                    <td><input type="button" value=")" onclick="calculator(')')"></td>
                 </tr>
     
                 <tr>
                     <td><input type="button" value="7" onclick="calculator('7')"></td>
                     <td><input type="button" value="8" onclick="calculator('8')"></td>
                     <td><input type="button" value="9" onclick="calculator('9')"></td>
-                    <td><input type="button" value="+" class="addBtn" onclick="calculator('+')"></td>
+                    <td><input type="button" value="+" onclick="calculator('+')"></td>
+                    
                 </tr>
     
                 <tr>
@@ -39,14 +41,14 @@
                     <td><input type="button" value="1" onclick="calculator('1')"></td>
                     <td><input type="button" value="2" onclick="calculator('2')"></td>
                     <td><input type="button" value="3" onclick="calculator('3')"></td>
-                    <td><input type="button" value="/" onclick="calculator('/')"></td>
+                    <td><input type="button" value="x" onclick="calculator('*')"></td>
                 </tr>
     
                 <tr>
-                    <td><input type="button" value="00" onclick="calculator('00')"></td>
                     <td><input type="button" value="0" onclick="calculator('0')"></td>
                     <td><input type="button" value="." onclick="calculator('.')"></td>
                     <td><input type="button" value="=" onclick="Answer()"></td>
+                    <td><input type="button" value="/" onclick="calculator('/')"></td>
                 </tr>
     
             </table>
@@ -67,6 +69,5 @@
             document.getElementById("MyResult").value = b;
         }
     </script>
-<!-- .value.toString().slice(0, -1) " -->
 </body>
 </html>

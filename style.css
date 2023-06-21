@@ -39,12 +39,6 @@ input[type="button"]:hover{
     background-color: #19d;
     outline: none;
 }
-.addBtn{
-    height: 165px !important;
-    position: absolute;
-    bottom: 0%;
-    right: .3%;
-}
 input[type="text"]{
     width: 340px;
     width: 250px;
